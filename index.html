@@ -22,34 +22,22 @@
     header img {
       height: 60px;
     }
-    .whatsapp {
+    .btn {
       text-decoration: none;
       color: white;
       background-color: #25D366;
-      padding: 10px 20px;
-      border-radius: 25px;
+      padding: 14px 28px;
+      border-radius: 30px;
       font-weight: bold;
+      font-size: 16px;
+    }
+    .btn.instagram {
+      background-color: #C13584;
+      margin-left: 10px;
     }
     .hero {
       background: url('capa.jpg') no-repeat center center/cover;
       height: 80vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      position: relative;
-    }
-    .hero::before {
-      content: "";
-      position: absolute;
-      top: 0; left: 0; right: 0; bottom: 0;
-      background: rgba(0,0,0,0.4);
-    }
-    .hero h2 {
-      position: relative;
-      color: white;
-      font-size: 50px;
-      font-family: 'Playfair Display', serif;
     }
     .section {
       padding: 60px 20px;
@@ -79,26 +67,24 @@
     }
     .footer {
       background-color: #f8d7dd;
-      padding: 20px;
+      padding: 40px 20px;
       text-align: center;
       font-size: 14px;
     }
-    .footer a {
-      color: #c13584;
-      text-decoration: none;
-      font-weight: bold;
+    .footer .buttons {
+      margin-top: 20px;
     }
   </style>
 </head>
 <body>
   <header>
     <img src="logo.png" alt="Cabanas Sonho Rosa">
-    <a class="whatsapp" href="https://wa.me/5551981167421" target="_blank">WhatsApp</a>
+    <div>
+      <a class="btn" href="https://wa.me/5551981167421" target="_blank">Fale conosco no WhatsApp</a>
+    </div>
   </header>
 
-  <section class="hero">
-    <h2>Follow that dream</h2>
-  </section>
+  <section class="hero"></section>
 
   <section class="section">
     <h3>Nossas Cabanas</h3>
@@ -109,17 +95,23 @@
       <img src="foto4.jpg" alt="Cabana 4">
       <img src="foto5.jpg" alt="Cabana 5">
       <img src="foto6.jpg" alt="Cabana 6">
+      <img src="foto7.jpg" alt="Cabana 7">
+      <img src="foto8.jpg" alt="Cabana 8">
+      <img src="foto9.jpg" alt="Cabana 9">
     </div>
   </section>
 
   <section class="section">
     <h3>Onde Estamos</h3>
-    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.237474321224!2d-51.000000!3d-30.000000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzDCsDAwJzAwLjAiUyA1McKwMDAnMDAuMCJX!5e0!3m2!1spt-BR!2sbr!4v0000000000000" allowfullscreen="" loading="lazy"></iframe>
+    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.317025312619!2d-50.275876599999996!3d-29.5586767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9519266ffda35591%3A0x4258a7858a8d2d12!2sCabanas%20Sonho%20Rosa!5e0!3m2!1spt-BR!2sbr!4v1721742560066!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </section>
 
   <footer class="footer">
     <p>&copy; 2025 Cabanas Sonho Rosa</p>
-    <p>Siga no Instagram: <a href="https://www.instagram.com/cabanassonhorosa" target="_blank">@cabanassonhorosa</a></p>
+    <div class="buttons">
+      <a class="btn" href="https://wa.me/5551981167421" target="_blank">WhatsApp</a>
+      <a class="btn instagram" href="https://www.instagram.com/cabanassonhorosa" target="_blank">Instagram</a>
+    </div>
   </footer>
 </body>
 </html>
