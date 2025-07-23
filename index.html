@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Cabanas Sonho Rosa</title>
   <style>
     body {
@@ -21,7 +21,7 @@
 
     .container {
       padding: 2rem;
-      max-width: 900px;
+      max-width: 1000px;
       margin: auto;
     }
 
@@ -33,17 +33,17 @@
     }
 
     .gallery {
-      display: flex;
-      flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 1rem;
-      justify-content: center;
       margin-bottom: 2rem;
     }
 
     .gallery img {
-      width: 280px;
+      width: 100%;
       border-radius: 10px;
       object-fit: cover;
+      height: 250px;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     }
 
@@ -112,9 +112,15 @@
     </div>
 
     <div class="gallery">
-      <img src="https://via.placeholder.com/400x300?text=Cabana+1" alt="Cabana 1">
-      <img src="https://via.placeholder.com/400x300?text=Cabana+2" alt="Cabana 2">
-      <img src="https://via.placeholder.com/400x300?text=Cabana+3" alt="Cabana 3">
+      <img src="foto1.jpg" alt="Banheira ao pôr do sol">
+      <img src="foto2.jpg" alt="Quarto decorado com arte budista">
+      <img src="foto3.jpg" alt="Entrada das cabanas à noite">
+      <img src="foto4.jpg" alt="Interior da cabana com iluminação aconchegante">
+      <img src="foto5.jpg" alt="Banheira com vista para o deck">
+      <img src="foto6.jpg" alt="Cama confortável e decoração">
+      <img src="foto7.jpg" alt="Banheiro moderno com chuveiro de vidro">
+      <img src="foto8.jpg" alt="Fachada da cabana com placa 'Follow That Dream'">
+      <img src="foto9.jpg" alt="Sala com cadeira suspensa e parede decorada">
     </div>
 
     <div class="map-container">
