@@ -1,154 +1,125 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cabanas Sonho Rosa</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Open+Sans&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Playfair Display', serif;
-      background-color: #ffe6ec;
       margin: 0;
-      padding: 0;
-      color: #444;
+      font-family: 'Open Sans', sans-serif;
+      background-color: #fcecef;
+      color: #333;
     }
-
     header {
-      background-color: #f78fb3;
+      background-color: #f8d7dd;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header img {
+      height: 60px;
+    }
+    .whatsapp {
+      text-decoration: none;
       color: white;
-      padding: 1.5rem;
+      background-color: #25D366;
+      padding: 10px 20px;
+      border-radius: 25px;
+      font-weight: bold;
+    }
+    .hero {
+      background: url('capa.jpg') no-repeat center center/cover;
+      height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.4);
+    }
+    .hero h2 {
+      position: relative;
+      color: white;
+      font-size: 50px;
+      font-family: 'Playfair Display', serif;
+    }
+    .section {
+      padding: 60px 20px;
       text-align: center;
     }
-
-    .container {
-      padding: 2rem;
-      max-width: 1000px;
-      margin: auto;
+    .section h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 32px;
+      margin-bottom: 30px;
     }
-
-    .description {
-      font-size: 1.2rem;
-      margin-bottom: 2rem;
-      text-align: center;
-      line-height: 1.6;
-    }
-
     .gallery {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 1rem;
-      margin-bottom: 2rem;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+      padding: 0 20px;
     }
-
     .gallery img {
       width: 100%;
-      border-radius: 12px;
-      object-fit: cover;
       height: 250px;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      object-fit: cover;
+      border-radius: 8px;
     }
-
-    .map-container {
-      margin-bottom: 2rem;
-      text-align: center;
-    }
-
-    iframe {
+    .map {
       width: 100%;
-      height: 350px;
-      border: 0;
-      border-radius: 12px;
+      height: 400px;
+      border: none;
     }
-
-    .whatsapp {
+    .footer {
+      background-color: #f8d7dd;
+      padding: 20px;
       text-align: center;
-      margin-bottom: 2rem;
+      font-size: 14px;
     }
-
-    .whatsapp a {
-      background-color: #25D366;
-      color: white;
-      padding: 1rem 2rem;
-      border-radius: 50px;
+    .footer a {
+      color: #c13584;
       text-decoration: none;
-      font-size: 1.2rem;
       font-weight: bold;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-    }
-
-    .whatsapp a:hover {
-      background-color: #1ebd5a;
-    }
-
-    .social {
-      text-align: center;
-      margin-bottom: 3rem;
-      font-size: 1.1rem;
-    }
-
-    .social a {
-      text-decoration: none;
-      color: #d63384;
-      font-weight: 600;
-    }
-
-    footer {
-      background-color: #f78fb3;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Cabanas Sonho Rosa</h1>
-    <p>Refúgio de luxo na Praia do Rosa 🌺</p>
+    <img src="logo.png" alt="Cabanas Sonho Rosa">
+    <a class="whatsapp" href="https://wa.me/5551981167421" target="_blank">WhatsApp</a>
   </header>
 
-  <div class="container">
-    <div class="description">
-      <p>
-        Inspiradas nas belezas da Tailândia e Indonésia, as Cabanas Sonhos Rosa oferecem elegância e conforto em uma das praias mais bonitas do Brasil. Compostas de deck privativo, banheira, cozinha bem equipada e muita sofisticação, as Cabanas Sonho Rosa são perfeitas para você que quer aproveitar ao máximo a Praia do Rosa, criando memórias inesquecíveis.
-      </p>
-    </div>
+  <section class="hero">
+    <h2>Follow that dream</h2>
+  </section>
 
+  <section class="section">
+    <h3>Nossas Cabanas</h3>
     <div class="gallery">
-      <img src="foto1.jpg" alt="Banheira ao pôr do sol">
-      <img src="foto2.jpg" alt="Quarto decorado com arte budista">
-      <img src="foto3.jpg" alt="Entrada das cabanas à noite">
-      <img src="foto4.jpg" alt="Interior da cabana com iluminação aconchegante">
-      <img src="foto5.jpg" alt="Banheira com vista para o deck">
-      <img src="foto6.jpg" alt="Cama confortável e decoração">
-      <img src="foto7.jpg" alt="Banheiro moderno com chuveiro de vidro">
-      <img src="foto8.jpg" alt="Fachada da cabana com placa 'Follow That Dream'">
-      <img src="foto9.jpg" alt="Sala com cadeira suspensa e parede decorada">
+      <img src="foto1.jpg" alt="Cabana 1">
+      <img src="foto2.jpg" alt="Cabana 2">
+      <img src="foto3.jpg" alt="Cabana 3">
+      <img src="foto4.jpg" alt="Cabana 4">
+      <img src="foto5.jpg" alt="Cabana 5">
+      <img src="foto6.jpg" alt="Cabana 6">
     </div>
+  </section>
 
-    <div class="map-container">
-      <h2>Localização</h2>
-      <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3462.746179759814!2d-48.6676257!3d-28.1150379!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95271b6b49e47291%3A0x73ab7e2f38d1d60c!2sPraia%20do%20Rosa%2C%20Imbituba%20-%20SC!5e0!3m2!1spt-BR!2sbr!4v1721731261261!5m2!1spt-BR!2sbr" 
-        allowfullscreen="" 
-        loading="lazy">
-      </iframe>
-    </div>
+  <section class="section">
+    <h3>Onde Estamos</h3>
+    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.237474321224!2d-51.000000!3d-30.000000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzDCsDAwJzAwLjAiUyA1McKwMDAnMDAuMCJX!5e0!3m2!1spt-BR!2sbr!4v0000000000000" allowfullscreen="" loading="lazy"></iframe>
+  </section>
 
-    <div class="whatsapp">
-      <a href="https://wa.me/5551981167421?text=Olá!%20Gostaria%20de%20fazer%20uma%20reserva%20na%20Cabanas%20Sonho%20Rosa." target="_blank">
-        Fale conosco no WhatsApp
-      </a>
-    </div>
-
-    <div class="social">
-      <p>Siga nosso Instagram: <a href="https://www.instagram.com/cabanassonhorosa" target="_blank">@cabanassonhorosa</a></p>
-    </div>
-  </div>
-
-  <footer>
-    <p>&copy; 2025 Cabanas Sonho Rosa. Todos os direitos reservados.</p>
+  <footer class="footer">
+    <p>&copy; 2025 Cabanas Sonho Rosa</p>
+    <p>Siga no Instagram: <a href="https://www.instagram.com/cabanassonhorosa" target="_blank">@cabanassonhorosa</a></p>
   </footer>
 </body>
 </html>
