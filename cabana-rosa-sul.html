@@ -1,87 +1,166 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+  <!-- Lightbox CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
   <meta charset="UTF-8">
-  <title>Conheça nossas cabanas - Cabanas Sonho Rosa</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Cabana Rosa Sul - Cabanas Sonho Rosa</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
   <style>
     body {
+      margin: 0;
       font-family: 'Dancing Script', cursive;
       background-color: #fcecef;
       color: #333;
-      margin: 0;
-      padding: 0;
+      font-size: 38px;
+      line-height: 1.4;
     }
-    nav {
-      text-align: center;
-      background: #f8d7dd;
-      padding: 15px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+    header {
+      background-color: #f8d7dd;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
-    nav a {
-      margin: 0 15px;
+
+    header img {
+      height: 60px;
+    }
+
+    .btn {
       text-decoration: none;
-      color: #333;
+      color: white;
+      background-color: #f4c2c2;
+      padding: 14px 28px;
+      border-radius: 30px;
       font-weight: bold;
+      font-size: 16px;
+      font-family: 'Open Sans', sans-serif;
     }
-    section {
-      max-width: 900px;
+
+    .section {
+      padding: 60px 20px;
+      text-align: center;
+      max-width: 1000px;
       margin: auto;
-      padding: 30px 20px;
     }
-    h2 {
-      color: #333;
+
+    .section h2 {
+      font-size: 60px;
+      margin-bottom: 30px;
     }
+
     .descricao {
-      font-size: 1.1em;
+      font-size: 28px;
       line-height: 1.6;
-      margin-bottom: 20px;
+      margin-bottom: 40px;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
     }
+
     .galeria {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-      gap: 10px;
-      margin-bottom: 40px;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 15px;
+      padding: 0 20px;
     }
-    .galeria div {
-      background-color: #fff;
-      height: 160px;
+
+    .galeria img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
       border-radius: 10px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
-    .galeria img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
+
+    nav {
+      text-align: center;
+      background-color: #f8d7dd;
+      padding: 15px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 18px;
+      margin: 0 15px;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        font-size: 28px;
+      }
+
+      .section h2 {
+        font-size: 42px;
+      }
+
+      .descricao {
+        font-size: 20px;
+        padding: 0 10px;
+      }
+
+      .galeria {
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        gap: 10px;
+        padding: 0 10px;
+      }
+
+      .galeria img {
+        height: 140px;
+      }
+
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      header img {
+        height: 50px;
+        margin-bottom: 10px;
+      }
+
+      .btn {
+        padding: 10px 20px;
+        font-size: 14px;
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+      }
+    }
   </style>
+  <!-- Lightbox JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
 </head>
 <body>
 
-<nav>
-  <a href="index.html">Início</a>
-</nav>
+<header>
+  <img src="logo.png" alt="Cabanas Sonho Rosa">
+  <a class="btn" href="index.html">Voltar ao Início</a>
+</header>
 
-<section>
-   <h2>Cabana Rosa Sul</h2>
+<section class="section">
+  <h2>Cabana Rosa Sul</h2>
   <div class="descricao">
     Equipada com cozinha completa, sala de estar, deck privativo com banheira externa, mezanino com mais uma cama de casal, possibilitando hospedagem para até 4 pessoas. Cesta de café da manhã cortesia na primeira diária. 
   </div>
   <div class="galeria">
-    <img src="foto7.jpg" alt="Cabana 2">
-    <img src="foto8.jpg" alt="Cabana 2">
-    <img src="foto9.jpg" alt="Cabana 2">
-    <img src="foto21.jpg" alt="Cabana 2">
-    <img src="foto22.jpg" alt="Cabana 2">
-    <img src="foto23.jpg" alt="Cabana 2">
-    <img src="foto24.jpg" alt="Cabana 2">
-    <img src="foto25.jpg" alt="Cabana 2">
-    <img src="foto26.jpg" alt="Cabana 2">
-    <img src="foto27.jpg" alt="Cabana 2">
-  </div>
-
+    <a href="foto7.jpg" data-lightbox="Rosa Sul" data-title="Cabana Rosa Sul 1"><img src="foto7.jpg" alt="Cabana Rosa Sul 1"></a>
+    <a href="foto8.jpg" data-lightbox="Rosa Sul" data-title="Cabana Rosa Sul 2"><img src="foto8.jpg" alt="Cabana Rosa Sul 2"></a>
+    <a href="foto9.jpg" data-lightbox="Rosa Sul" data-title="Cabana Rosa Sul 3"><img src="foto9.jpg" alt="Cabana Rosa Sul 3"></a>
+    <a href="foto21.jpg" data-lightbox="Rosa Sul" data-title="Cabana Rosa Sul 4"><img src="foto21.jpg" alt="Cabana Rosa Sul 4"></a>
+    <a href="foto22.jpg" data-lightbox="Rosa Sul" data-title="Cabana Rosa Sul 5"><img src="foto22.jpg" alt="Cabana Rosa Sul 5"></a>
+    <a href="foto23.jpg" data-lightbox="Rosa Sul" data-title="Cabana Rosa Sul 6"><img src="foto23.jpg" alt="Cabana Rosa Sul 6"></a>
+    <a href="foto24.jpg" data-lightbox="Rosa Sul" data-title="Cabana Rosa Sul 7"><img src="foto24.jpg" alt="Cabana Rosa Sul 7"></a>
+    <a href="foto25.jpg" data-lightbox="Rosa Sul" data-title="Cabana Rosa Sul 8"><img src="foto25.jpg" alt="Cabana Rosa Sul 8"></a>
+    <a href="foto26.jpg" data-lightbox="Rosa Sul" data-title="Cabana Rosa Sul 9"><img src="foto26.jpg" alt="Cabana Rosa Sul 9"></a>
+    <a href="foto27.jpg" data-lightbox="Rosa Sul" data-title="Cabana Rosa Sul 10"><img src="foto27.jpg" alt="Cabana Rosa Sul 10"></a>
   </div>
 </section>
 
